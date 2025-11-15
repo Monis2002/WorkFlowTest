@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect,get_object_or_404
 from .models import Task
 from .forms import TaskForm
-
+# Testing comment
 def task_list(request):
     tasks = Task.objects.all()
     form = TaskForm()
